@@ -29,5 +29,6 @@ public class CalculoLetraDNI_ArrayList {
 		int dni = lector.nextInt();
 		System.out.println("El DNI con letra es: " + dni + STRING_ASOCIACION_NIF.get(dni % 23));
 		lector.close();
+		
 	}
 }

@@ -22,6 +22,7 @@ public class CalculaLetraDNI_HashMap {
 
 		}
 		
+		
 		Scanner lector = new Scanner(System.in);
 		System.out.println("Introduce el DNI sin letra: ");
 		int dni = lector.nextInt();

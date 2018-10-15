@@ -3,14 +3,16 @@
 
 package ejercicios;
 
-import leer.Leer;
+import java.util.Scanner;
+
 
 public class Actividad_17_d {
 
 	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Introduce un número entero:");
-		int numero = Leer.datoInt();
+		int numero = scanner.nextInt();
 		
 		System.out.println("Numero de primos menores o igual que " + numero);
 		

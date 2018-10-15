@@ -1,18 +1,26 @@
 package ejercicios;
 
+import java.util.Scanner;
+
+import ejercicios.metodos.ClaseRandom;
 import leer.Leer;
 
 public class Actividad_15 {
 
 	public static void main(String[] args) {
-		int nota1,nota2,nota3,nota4;
-		nota1 = Leer.datoInt();
-		nota2 = Leer.datoInt();
-		nota3 = Leer.datoInt();
-		nota4= Leer.datoInt();
+		Scanner scanner = new Scanner(System.in);
+		int nota1,nota2,nota3,nota4, notaMedia;
 		
-		int notaMedia = (nota1+nota2+nota3+nota4)/4;
+		System.out.println("Introduce las cuatro notas. Pulsa enter tras escribir cada una de ellas:");
+		nota1 = scanner.nextInt();
+		nota2 = scanner.nextInt();
+		nota3 = scanner.nextInt();
+		nota4= scanner.nextInt();
+		
+		notaMedia = (nota1+nota2+nota3+nota4)/4;
+		
 		System.out.println("Nota media: " + notaMedia);
+		
 		if(notaMedia >= 90) {
 			System.out.println("SOBRESALIENTE");
 		} else if (notaMedia >= 80) {
@@ -24,6 +32,8 @@ public class Actividad_15 {
 		} else {
 			System.out.println("INSUFICIENTE");
 		}
+		
+		
 	}
 
 }

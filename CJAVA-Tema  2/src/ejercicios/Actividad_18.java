@@ -1,12 +1,16 @@
 package ejercicios;
 
+import java.util.Scanner;
+
 import leer.Leer;
 
 public class Actividad_18 {
 	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
       
 		System.out.println("Introduce un número");
-		int numero = Leer.datoInt();
+		int numero = scanner.nextInt();
 		
 		// forma 1
         System.out.println("El numero "+numero+ " en binario es "+ decimalBinario(numero));

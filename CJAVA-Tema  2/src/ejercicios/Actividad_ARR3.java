@@ -1,13 +1,15 @@
 package ejercicios;
 
-import leer.Leer;
+import java.util.Scanner;
+
 
 public class Actividad_ARR3 {
 
 	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 		//Indicamos el tamaño
         System.out.printf("Introduce tamaño del array");
-        int tamanio=Leer.datoInt();
+        int tamanio=sc.nextInt();
         
         //Creamos los arrays
         int array1[]=new int [tamanio];

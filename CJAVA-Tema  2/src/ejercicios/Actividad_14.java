@@ -23,6 +23,10 @@ public class Actividad_14 {
 		} else {
 			System.out.println("El número introducido no se corresponde a un mes");
 		}
+		
+		if( mes < 2500 && mes > 1 ) {
+			
+		}
 			
 		
 		/*switch (mes) {
@@ -39,7 +43,7 @@ public class Actividad_14 {
 		case 6:
 		case 9:
 		case 11:
-			System.out.println("El mes introducido tiene 30 días");
+			System.out.println("El mes introduc23ido tiene 30 días");
 			break;
 		case 2:
 			System.out.println("El mes introducido tiene 28 días");
@@ -47,8 +51,8 @@ public class Actividad_14 {
 
 		default:
 			System.out.println("El número introducido no se corresponde a un mes");
-		}
-*/
+		}*/
+
 		// Otra forma de hacer lo mismo usando la clase Calendar de la librería de Java
 
 		/*Calendar fecha =  Calendar.getInstance(); // Nos creamos un objeto Calendar

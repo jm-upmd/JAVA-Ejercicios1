@@ -3,8 +3,6 @@ package ejercicios;
 import java.util.Calendar;
 import java.util.Scanner;
 
-import leer.Leer;
-
 public class Actividad_14 {
 
 	public static void main(String[] args) {
@@ -24,10 +22,8 @@ public class Actividad_14 {
 			System.out.println("El número introducido no se corresponde a un mes");
 		}
 		
-		if( mes < 2500 && mes > 1 ) {
-			
-		}
-			
+
+		// Lo mismo pero con sentencia switch. Decomentar para probar.	
 		
 		/*switch (mes) {
 		case 1:
@@ -53,11 +49,11 @@ public class Actividad_14 {
 			System.out.println("El número introducido no se corresponde a un mes");
 		}*/
 
-		// Otra forma de hacer lo mismo usando la clase Calendar de la librería de Java
+		// Otra forma de hacer lo mismo usando la clase Calendar de la librería de Java. Descomentar para probar
 
-		/*Calendar fecha =  Calendar.getInstance(); // Nos creamos un objeto Calendar
-		fecha.set(Calendar.MONTH, mes - 1); // Establce el mes actual del calendario. Primer mes es 0.
-		System.out.println("*El mes introducido tiene " + fecha.getActualMaximum(Calendar.DAY_OF_MONTH) + " días");*/
+//		Calendar fecha =  Calendar.getInstance(); // Nos creamos un objeto Calendar
+//		fecha.set(Calendar.MONTH, mes - 1); // Establce el mes actual del calendario. Primer mes es 0.
+//		System.out.println("*El mes introducido tiene " + fecha.getActualMaximum(Calendar.DAY_OF_MONTH) + " días");
 		
 		
 

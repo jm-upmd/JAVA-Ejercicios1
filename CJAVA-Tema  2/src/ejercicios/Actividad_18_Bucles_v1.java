@@ -18,29 +18,15 @@ public class Actividad_18_Bucles_v1 {
 
 		System.out.println("Introduce un numero entero y pulsa return");
 		System.out.println("Para terminar introduce un número negativo y pulsa return");
-		
-		// Lectura del primer número.
-
-		if(lector.hasNextInt()) {
-			numero = lector.nextInt();
-			System.out.println("Numero introducido positivo: " + numero);
-		} else  {
-			System.out.println("El dato no es un número entero");
-			lector.next();  // descarto el dato del buffer
-		}
-		
-		// Si el primer dato introducido no ha sido un múmero
-		// la variable numero tentra asignada Integer.MAX_VALUE y 
-		// entrará en el bucle siguiente.
 			
 		// Bucle para leer numeros mientras no se de uno negativo.
 		
 		while (numero >= 0) {
-				System.out.println("Introduce otro número: ");
+				System.out.println("Introduce el número: ");
 
 				if(lector.hasNextInt()) {
 					numero = lector.nextInt();
-					System.out.println("Numero introducido: " + numero);
+					System.out.println("Numero introducido positivo: " + numero);
 					
 				} else {
 					System.out.println("El dato no es un número entero");

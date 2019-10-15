@@ -10,7 +10,7 @@ public class Actividad_17_b {
 		System.out.println("Introduce un número entero:");
 		int numero = scanner.nextInt();
 		
-/*		int i = 2;
+		int i = 2;
 		boolean primo = true;
 
 		while (primo && i < numero) {
@@ -25,31 +25,31 @@ public class Actividad_17_b {
 			System.out.println(numero + " es primo");
 		} else {
 			System.out.println(numero + " no es primo");
-		}*/
+		}
 	
 		
 		// Otra forma de hacerlo usando break y sin variable booleana
 		
-		/*int i=2;
-		while (i < numero) {
-				if (numero % i == 0) break;
-			i++;
+		int j=2;
+		while (j < numero) {
+			if (numero % j == 0) break;
+			j++;
 		}
 		
 		// Si i == numero es que ha recorrido todos lo numeros hasta llegar a numero
 		// sin que ninguno de ellos haya sido divisor de numero, en cuyo caso es primo.
 		
-		if(i == numero){
+		if(j == numero){
 			System.out.println(numero + " es primo");
 		} else {
 			System.out.println(numero + " no es primo");
-		}*/
+		}
 		
 		
-		// Otra forma de hacerlo  menos legible... Evitar este tipo de codificación...
-		int i =2;
-		while ( i < numero && (numero % i++ != 0)); 
-		System.out.println("El número " + (i == numero ? "ES":"NO ES" ) + " primo");
+		// Otra forma de hacerlo  menos legible... Evitar este tipo de codificación!!!!
+		int k =2;
+		while ( k < numero && (numero % k++ != 0)); 
+		System.out.println("El número " + (k == numero ? "ES":"NO ES" ) + " primo");
 		
 		
 			

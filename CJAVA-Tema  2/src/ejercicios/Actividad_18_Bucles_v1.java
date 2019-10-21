@@ -30,7 +30,7 @@ public class Actividad_18_Bucles_v1 {
 					
 				} else {
 					System.out.println("El dato no es un número entero");
-					lector.next();
+					lector.next();  // Saca datos del buffer
 				}
 		}
 

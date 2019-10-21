@@ -1,5 +1,4 @@
-/* Recoge un número por teclado y calcula si es primo o no
- */
+/* Recoge un número por teclado y calcula los primos menores o igual a el*/
 
 package ejercicios;
 

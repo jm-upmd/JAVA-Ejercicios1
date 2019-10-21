@@ -24,6 +24,14 @@ public class PiramideV2 {
 	}
 	
 	static String strCaracter(int n, char c) {
+		char[] arrayChar = new char[n];
+		for(int i = 0; i < arrayChar.length; i++)
+			arrayChar[i]=c;
+		return String.valueOf(arrayChar);
+	}
+	
+	// Lo mismo que método anterior pero usando Arrays.fill()
+	static String strCaracter2(int n, char c) {
 		char[] arr = new char[n]; 
 		Arrays.fill(arr, c);
 		return String.valueOf(arr);	

@@ -28,12 +28,12 @@ public class Piramide {
 		int numEspacioss = filas; 
 		int numAsteriscos = 1;
 		
-		for(int i = 1; i < filas; i++) {
+		for(int i = 1; i < filas; i++) {        // Para cada piso de la pirámide
 			
-			for(int j=1; j<= numEspacioss; j++)
+			for(int j=1; j<= numEspacioss; j++) // Pinta espacios
 				System.out.print(" ");
 			
-			for(int j=1; j<=numAsteriscos; j++)
+			for(int j=1; j<=numAsteriscos; j++)  // Pinta asteriscos
 				System.out.print("*");
 			
 			System.out.println();

@@ -24,7 +24,7 @@ public class ClaseRandom {
 	}
 	
 	static int aleatorio(int rangoDesde, int rangoHasta) {
-		// Math.random() devuelve un número double entre 0 y 0.1 (0.1 no incluido)
+		// Math.random() devuelve un número double entre 0 y 1.0 (1.0 no incluido)
 		int numeroAleatorio;
 		numeroAleatorio = (int) (Math.random() * (rangoHasta - rangoDesde + 1)) + rangoDesde;
 		return numeroAleatorio;

@@ -2,7 +2,6 @@ package ejercicios;
 
 import java.util.Scanner;
 
-import leer.Leer;
 
 public class Actividad_18 {
 	public static void main(String[] args) {
@@ -14,16 +13,19 @@ public class Actividad_18 {
 		
 		// forma 1
         System.out.println("El numero "+numero+ " en binario es "+ decimalBinario(numero));
+        
+       // forma 2
+        System.out.println("El numero "+numero+ " en binario es "+ decimalBinario2(numero));
        
-        // forma 2
-        System.out.printf("El número %d en binario es %.0f\n", numero,decimalBinario2(numero));
+        // forma 3
+        System.out.printf("El número %d en binario es %.0f\n", numero,decimalBinario3(numero));
         
         
-       // forma 3. La más sencilla..., llamando clase del API de Java.
+       // forma 4. La más sencilla..., llamando clase del API de Java.
         System.out.println("El numero "+numero+ " en binario es "+ Integer.toBinaryString(numero));
 
 
-        
+        scanner.close();
     }
 	
    public static String decimalBinario (int numero){
@@ -44,7 +46,24 @@ public class Actividad_18 {
     }
    
    // Otra forma de hacerlo
-   public static double decimalBinario2(int numero) {
+   public static String decimalBinario2(int numero) {
+
+		
+		int cociente = numero;
+		String binario= "";
+		
+		while(cociente != 0) {
+			cociente = numero / 2;
+			binario =  String.valueOf(numero % 2) + binario;
+			numero = cociente;
+		}
+		
+		return binario;
+
+	}
+   
+   // Otra forma de hacerlo
+   public static double decimalBinario3(int numero) {
 	   int exp, digito;
        double binario;
 

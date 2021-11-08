@@ -15,6 +15,7 @@ filas = 5
 
 package ejercicios.piramide;
 
+import java.io.Closeable;
 import java.util.Scanner;
 
 public class Piramide {
@@ -41,6 +42,7 @@ public class Piramide {
 			numAsteriscos+=2;
 			
 		}
+		sss.close();
 	}
 
 }

@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CalculaArea {
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 		Scanner entrada = new Scanner(System.in);
 		int opcion;
 		boolean finalizar = false;
@@ -78,7 +78,7 @@ public class CalculaArea {
 	static boolean numeroOK(Scanner entrada) {
 		if(!entrada.hasNextDouble()) {
 			System.out.println("Numero incorrecto.");
-			entrada.next();
+			entrada.next(); // saca el dato incorrecto del buffer.
 			return false;
 		}
 		return true;
